@@ -1,25 +1,44 @@
-<header>
+<header class="header ">
   <div class="container">
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Launch demo modal
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+    <div class="header__block">
+      <div class="header__right">
+        <div class="header__logo">
+          <img src="./img/Header-logo.svg" alt="">
+        </div>
+        <div class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <div class="header__dropdown">
+                <h3 class="header__title header__cursor">Інтерактив</h3>
+                <img src="./img/Header-arrow.svg" class="header__arrow light__mode-svg" alt="">
+              </div>
+              <ul class="header__menu">
+                <li class="header__menu-item header__title header__cursor">Всі секції</li>
+                <li class="header__menu-item header__title header__cursor">Числовий</li>
+                <li class="header__menu-item header__title header__cursor">Ігровий</li>
+                <li class="header__menu-item header__title header__cursor">Ознайомчий</li>
+              </ul>
+            </li>
+            <li class="header__item">
+              <a href="#team" class="header__title header__cursor">Наша команда</a>
+            </li>
+            <li class="header__item">
+              <a href="#footer" class="header__title header__cursor">Контакти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__left">
+        <div class="switch">
+          <label id="switch" class="switch__label">
+            <input type="checkbox" onchange="toggleTheme()" id="slider_checkbox">
+            <span class="slider round"></span>
+        </label>
+        </div>
+        <div class="header__name">
+          <h3 class="header__title header__hi-menu">
+            Вітаємо, <span id="userName">User</span>
+          </h3>
         </div>
       </div>
     </div>

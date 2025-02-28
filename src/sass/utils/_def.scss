@@ -59,7 +59,7 @@ font-size: 24px;
 text-align: center;
 }
 main{
-  background-image:url("/src/images/Group141.png");
+  background-image:url("../img/Group141.png");
   background-repeat:no-repeat ;
   background-size: cover;
 }
@@ -82,11 +82,41 @@ li {
 html {
   scroll-behavior: smooth;
 }
-body.light-mode {
+body.light-theme {
   background-color: white;
   color: black;
 }
-body.dark-mode {
+
+body.dark-theme {
   background-color: rgb(111, 111, 111);
   color: white;
-}  
+}
+
+header.light-theme {
+  background-color: #FFFFFF;
+  color: #000000;                
+}
+
+header.dark-theme {
+  background-color: rgb(111, 111, 111);
+  color: white;
+}
+
+body.light-theme .header__title {
+  color: black;
+}
+body.dark-theme .header__title {
+  color: white;
+}
+.line{
+  width: 536px;
+  border: 1px solid #000000;
+  color: #000000;
+}
+.Games{
+   font-family: "Montserrat Alternates";
+ font-weight: 400;
+ font-size: 24px;
+ margin-bottom: 34px;
+ margin-top: 34px;
+}
