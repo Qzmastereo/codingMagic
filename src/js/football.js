@@ -5,7 +5,7 @@ const ctx = canvas.getContext("2d");
 const scoreDisplay = document.getElementById("score");
 
 const ball = { x: 80, y: canvas.height / 2, width: 70, height: 70, following: false, image: new Image() };
-ball.image.src = "img/football (1) 1.png"; // Посилання на м'яч
+ball.image.src = "./img/football (1) 1.png"; // Посилання на м'яч
 
 const goal = { x: canvas.width - 60, y: canvas.height / 2 - 30, width: 50, height: 60 };
 let score = 0;
