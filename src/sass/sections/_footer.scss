@@ -1,0 +1,56 @@
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: white;
+}
+
+.info-footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.link-footer{
+    color: black;
+    font-size: 11px;
+}
+
+.form-footer {
+    display: flex;
+    gap: 10px;
+
+    .input-footer {
+        flex-grow: 1;
+        border-radius: 30px;
+        padding: 4px;
+        background-color: #D7D7D7;
+    }
+
+    .btn-footer {
+        padding: 11px 25px;
+        font-size: 11px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+
+.subscribe-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.text-footer {
+    font-size: 7px;
+}
