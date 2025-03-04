@@ -36,7 +36,6 @@ function toggleTheme() {
     header.classList.add("light-theme");
   }
 }
-
 document
   .getElementById("slider_checkbox")
   .addEventListener("change", toggleTheme);
