@@ -98,7 +98,7 @@ header.light-theme {
 }
 
 header.dark-theme {
-  background-color: rgb(111, 111, 111);
+  background-color: rgb(92, 92, 92);
   color: white;
 }
 
@@ -133,8 +133,15 @@ body.dark-theme .line {
 }
 body.dark-theme .header__arrow {
   stroke : #FFFFFF !important;
-  fill: rgb(111, 111, 111) !important;
+  fill: rgb(92, 92, 92) !important;
 }
 body.dark-theme .header__menu{
   border: 1px solid #FFFFFF;
+}
+body.dark-theme .footer{
+  background-color: rgb(92, 92, 92);
+  color: white;
+}
+body.dark-theme .link-footer{
+  color: white;
 }

@@ -19,23 +19,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function toggleTheme() {
   const checkbox = document.getElementById("slider_checkbox");
-  const body = document.body;
-  const header = document.querySelector("header");
+  const logo = document.querySelector(".header__logo img"); 
 
   if (checkbox.checked) {
-    body.classList.remove("light-theme");
-    body.classList.add("dark-theme");
 
-    header.classList.remove("light-theme");
-    header.classList.add("dark-theme");
+    document.body.classList.remove("light-theme");
+    document.body.classList.add("dark-theme");
+
+    document.querySelector("header").classList.remove("light-theme");
+    document.querySelector("header").classList.add("dark-theme");
+
+
+    logo.src = "./img/Header-logo-dark.svg";
   } else {
-    body.classList.remove("dark-theme");
-    body.classList.add("light-theme");
 
-    header.classList.remove("dark-theme");
-    header.classList.add("light-theme");
+    document.body.classList.remove("dark-theme");
+    document.body.classList.add("light-theme");
+
+    document.querySelector("header").classList.remove("dark-theme");
+    document.querySelector("header").classList.add("light-theme");
+
+
+    logo.src = "./img/Header-logo.svg";
   }
 }
+
 document
   .getElementById("slider_checkbox")
   .addEventListener("change", toggleTheme);
