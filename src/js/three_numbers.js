@@ -4,8 +4,8 @@ function findMax() {
     let num3 = parseFloat(document.querySelector(".num33").value) || 0;
     let resultElement = document.querySelector(".result-one");
     
-    if (document.querySelector(".num11").value && document.querySelector(".num2").value && document.querySelector(".num3").value) {
-        let maxNumber = Math.max(num11, num22, num33);
+    if (document.querySelector(".num11").value && document.querySelector(".num22").value && document.querySelector(".num33").value) {
+        let maxNumber = Math.max(num1, num2, num3);
         resultElement.innerText = "Найбільше число, яке ви ввели - " + maxNumber;
     } else {
         resultElement.innerText = "Найбільше число, яке ви ввели - (число)";
