@@ -12,6 +12,10 @@
     font-size: 12px;
 }
 
+.modal-footer-text{
+    font-size: 16px;
+}
+
 .link-footer{
     color: black;
     font-size: 11px;
@@ -24,7 +28,7 @@
     .input-footer {
         flex-grow: 1;
         border-radius: 30px;
-        padding: 4px;
+        padding: 7px;
         background-color: #D7D7D7;
     }
 
@@ -53,4 +57,52 @@
 
 .text-footer {
     font-size: 7px;
+}
+
+.modal-content{
+    position: relative;
+    width: 463px;
+    height: 245px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-modal{
+    position: absolute;
+    top: 6px;
+    right: 22px;
+   
+}
+
+.right-img-footer{
+    position: relative;
+}
+
+.development-footer{
+    position: absolute;
+    top: 28px;
+    right: 41px;
+   
+}
+.tic-tac-toe-footer{
+    position: absolute;
+    top: 107px;
+    right: 77px;
+}
+
+.left-img-footer{
+    position: relative;
+}
+
+.puzzle-footer{
+    position: absolute;
+    top: 106px;
+    left: -323px;
+}
+
+.sword-footer{
+    position: absolute;
+    top: 11px;
+    left: -343px;
 }
