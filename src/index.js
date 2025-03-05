@@ -15,5 +15,4 @@ import "./js/leap_year.js";
 import "./js/ourTeam.js";
 import "./js/scientist.js";
 import "./js/stone_game.js";
-import "./js/three_numbers.js";
 import "./js/timeCalculator.js";
