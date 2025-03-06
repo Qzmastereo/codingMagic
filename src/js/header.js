@@ -30,7 +30,7 @@ function toggleTheme() {
     document.querySelector("header").classList.add("dark-theme");
 
 
-    logo.src = "./img/Header-logo-dark.svg";
+    logo.src = "img/Header-logo-dark.svg";
   } else {
 
     document.body.classList.remove("dark-theme");
@@ -40,7 +40,7 @@ function toggleTheme() {
     document.querySelector("header").classList.add("light-theme");
 
 
-    logo.src = "./img/Header-logo.svg";
+    logo.src = "img/Header-logo.svg";
   }
 }
 
