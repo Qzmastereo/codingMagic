@@ -222,3 +222,35 @@ input:checked + .slider:before {
 .header__arrow.rotated {
   transform: rotate(180deg);
 }
+
+.header__list {
+  @media (max-width: 1280px ) and (min-width: 768px)  {
+    gap: 20px;
+  }
+}
+.header__list {
+  @media (max-width: 768px ) and (min-width: 480px)  {
+        gap: 0;
+        margin-left: 55px;
+  }
+}
+ .hed_com {
+  @media (max-width: 768px ) and (min-width: 480px)  {
+    display: none;
+    
+  }
+}
+.hed_contk {
+  @media (max-width: 768px ) and (min-width: 480px)  {
+    display: none;
+   
+  }
+}
+.header__nav {
+  @media (max-width: 768px ) and (min-width: 480px)  {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+}
