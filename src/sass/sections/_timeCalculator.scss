@@ -1,0 +1,44 @@
+.time-input {
+    background-color: #d7d7d7;
+    border-radius: 30px;
+    padding: 12px 10px;
+    font-family: 'Montserrat Alternates';
+    font-size: 12px;
+    width: 135px;
+    text-align: center;
+    font-weight: 400;
+    color: #7e7e7e;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    width: 140px;
+   justify-content: center;
+}
+
+.title-tcalc {
+    font-family: 'Montserrat Alternates';
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin: 36px 0;
+}
+
+.container-tcalc {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 36px auto;
+    width: 435px;
+}
+
+.tequal {
+    font-family: 'Montserrat Alternates';
+    font-size: 12px;
+    font-weight: 400;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
