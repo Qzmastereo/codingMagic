@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const dropdown = document.querySelector(".header__dropdown");
   const menu = document.querySelector(".header__menu");
   const arrow = document.querySelector(".header__arrow");
+  const footerLogo = document.querySelector(".image-footer img");
 
   dropdown.addEventListener("click", function (event) {
     event.stopPropagation();
@@ -19,28 +20,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function toggleTheme() {
   const checkbox = document.getElementById("slider_checkbox");
-  const logo = document.querySelector(".header__logo img"); 
+  const logo = document.querySelector(".header__logo img");
+  const footerLogo = document.querySelector(".image-footer img");
 
   if (checkbox.checked) {
-
     document.body.classList.remove("light-theme");
     document.body.classList.add("dark-theme");
 
     document.querySelector("header").classList.remove("light-theme");
     document.querySelector("header").classList.add("dark-theme");
 
-
     logo.src = "img/Header-logo-dark.svg";
+    footerLogo.src = "img/Header-logo-dark.svg";
   } else {
-
     document.body.classList.remove("dark-theme");
     document.body.classList.add("light-theme");
 
     document.querySelector("header").classList.remove("dark-theme");
     document.querySelector("header").classList.add("light-theme");
 
-
     logo.src = "img/Header-logo.svg";
+    footerLogo.src = "img/Header-logo.svg";
   }
 }
 
