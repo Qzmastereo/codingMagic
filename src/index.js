@@ -16,3 +16,8 @@ import "./js/ourTeam.js";
 import "./js/scientist.js";
 import "./js/stone_game.js";
 import "./js/timeCalculator.js";
+import { findMax } from "./js/three_numbers.js";
+
+document.querySelectorAll(".num11, .num22, .num33").forEach(input => {
+    input.addEventListener("input", findMax);
+})
