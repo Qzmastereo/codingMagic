@@ -214,3 +214,18 @@ requestAnimationFrame(gameLoop);
 
 window.addEventListener("keyup", reset, { once: true });
 window.addEventListener("touchstart", reset, { once: true });
+
+
+window.addEventListener("keydown", (event) => {
+  if (event.code === "Space") {
+    event.preventDefault(); // Prevent the page from scrolling down when spacebar is pressed
+  }
+});
+
+window.addEventListener("keyup", (event) => {
+  if (event.code === "Space") {
+    reset(); // Or any logic you want when the spacebar is released
+  }
+}, { once: true });
+
+
