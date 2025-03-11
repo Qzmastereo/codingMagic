@@ -39,3 +39,11 @@
     margin: 20px 0 0 0;
     font-size: 12px;
 }
+
+@media screen and (max-width: 510px) {
+
+    .input-container{
+        flex-direction: column;
+    }
+
+}
