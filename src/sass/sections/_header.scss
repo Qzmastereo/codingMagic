@@ -254,3 +254,31 @@ input:checked + .slider:before {
 
   }
 }
+@media (max-width: 480px) {
+  .header__list {
+    gap: 0;
+    margin-left: 55px;
+    margin-right: 40px;
+  }
+  .hed_com{
+    display: none;
+  }
+  .hed_contk{
+    display: none;
+  }
+  .header__name h3{
+    font-size: 12px;
+  }
+  .header__name{
+    max-width: 60px;
+  }
+  .header__logo{
+    width: 50px;
+  }
+  .header__nav{
+    max-width: 100px;
+  }
+  .header__left{
+    gap: 8px;
+  }
+}
