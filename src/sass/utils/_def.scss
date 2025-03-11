@@ -152,3 +152,16 @@ body.dark-theme .modal-content{
 body.dark-theme .close-modal{
   background-color: rgb(111, 111, 111);
 }
+.line {
+  @media (max-width: 768px )  {
+    max-width: 480px;
+    width: 100%;
+  }
+   @media (max-width: 540px )  {
+    max-width: 480px;
+    width: 100%;
+  }
+  @media (max-width: 480px )  {
+    width: 100%;
+  }
+}
