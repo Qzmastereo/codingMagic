@@ -122,3 +122,11 @@
     width: 15px;
     height: 15px;
 }
+.modal-header{
+  @media (max-width: 768px) {
+    max-width: 450px;
+    height: 300px;
+    top: 30% !important;
+    left: 45% !important;
+  }
+}

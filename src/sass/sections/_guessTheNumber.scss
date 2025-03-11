@@ -89,3 +89,22 @@
     width: 15px;
     height: 15px;
 }
+.guessTheNumber__info{
+    @media (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.guessTheNumber__input{
+    @media (max-width: 768px) {
+    margin-left: 25px;
+  }
+}
+.guessTheNumber__result{
+    @media (max-width: 768px) {
+    margin-top: 10px;
+  }
+}

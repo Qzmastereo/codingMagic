@@ -61,3 +61,15 @@
     text-align: right;
   }
 }
+.leap-year__box{
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+  }
+}
+.leap-year__output{
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
+}
