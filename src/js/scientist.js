@@ -1,182 +1,69 @@
 const scientists = [
-    {
-    name: "Albert",
-    surname: "Einstein",
-    born: 1879,
-    dead: 1955,
-    id: 1
-    },
-    {
-    name: "Isaac",
-    surname: "Newton",
-    born: 1643,
-    dead: 1727,
-    id: 2
-    },
-    {
-    name: "Galileo",
-    surname: "Galilei",
-    born: 1564,
-    dead: 1642,
-    id: 3
-    },
-    {
-    name: "Marie",
-    surname: "Curie",
-    born: 1867,
-    dead: 1934,
-    id: 4
-    },
-    {
-    name: "Johannes",
-    surname: "Kepler",
-    born: 1571,
-    dead: 1630,
-    id: 5
-    },
-    {
-    name: "Nicolaus",
-    surname: "Copernicus",
-    born: 1473,
-    dead: 1543,
-    id: 6
-    },
-    {
-    name: "Max",
-    surname: "Planck",
-    born: 1858,
-    dead: 1947,
-    id: 7
-    },
-    {
-    name: "Katherine",
-    surname: "Blodgett",
-    born: 1898,
-    dead: 1979,
-    id: 8
-    },
-    {
-    name: "Ada",
-    surname: "Lovelace",
-    born: 1815,
-    dead: 1852,
-    id: 9
-    },
-    {
-    name: "Sarah E.",
-    surname: "Goode",
-    born: 1855,
-    dead: 1905,
-    id: 10
-    },
-    {
-    name: "Lise",
-    surname: "Meitner",
-    born: 1878,
-    dead: 1968,
-    id: 11
-    },
-    {
-    name: "Hanna",
-    surname: "Hammarström",
-    born: 1829,
-    dead: 1909,
-    id: 12
-    }
-    ];
-    //!nineteenthCenturyScientists 
-    const nineteenthCenturyScientists = scientists.filter(scientist => scientist.born >= 1800 && scientist.born < 1900);
-    console.log(nineteenthCenturyScientists);
+    { name: "Albert", surname: "Einstein", birthYear: 1879, deathYear: 1955 },
+    { name: "Isaac", surname: "Newton", birthYear: 1643, deathYear: 1727 },
+    { name: "Galileo", surname: "Galilei", birthYear: 1564, deathYear: 1642 },
+    { name: "Marie", surname: "Curie", birthYear: 1867, deathYear: 1934 },
+    { name: "Nikola", surname: "Tesla", birthYear: 1856, deathYear: 1943 },
+    { name: "Charles", surname: "Darwin", birthYear: 1809, deathYear: 1882 },
+    { name: "Stephen", surname: "Hawking", birthYear: 1942, deathYear: 2018 },
+    { name: "Richard", surname: "Feynman", birthYear: 1918, deathYear: 1988 },
+    { name: "Carl", surname: "Sagan", birthYear: 1934, deathYear: 1996 },
+    { name: "Dmitri", surname: "Mendeleev", birthYear: 1834, deathYear: 1907 },
+    { name: "Alan", surname: "Turing", birthYear: 1912, deathYear: 1954 },
+    { name: "Niels", surname: "Bohr", birthYear: 1885, deathYear: 1962 }
+];
 
-    //!bornEnstein
-    const bornEnstein = scientists.find(scientist => scientist.born === 1879);
-    console.log(bornEnstein);
+const scientistTexts = document.querySelectorAll(".scientist-text");
+const buttons = document.querySelectorAll(".button-scienttist-js");
 
-    //!Відсортувати вчених за алфавітом
+buttons[0].addEventListener("click", () => {
+    const filtered = scientists.filter(s => s.birthYear >= 1800 && s.birthYear < 1900);
+    updateScientists(filtered);
+});
 
-    const sortAlphabet = scientists.sort((a, b) => a.surname.localeCompare(b.surname));
-    console.log(sortAlphabet);
+buttons[1].addEventListener("click", () => {
+    const einstein = scientists.find(s => s.surname === "Einstein");
+    updateScientists([einstein]);
+});
 
-    //!firstLetterC
-    const firstLetterC = scientists.filter(scientist => scientist.surname.charAt(0) === "C");
-    console.log(firstLetterC);
+buttons[2].addEventListener("click", () => {
+    const sorted = [...scientists].sort((a, b) => a.surname.localeCompare(b.surname));
+    updateScientists(sorted);
+});
 
-    //!deadBeforeBorn
-    const aliveYears = scientists.sort((a, b) => (a.dead - a.born) - (b.dead - b.born));
-    console.log(aliveYears);
+buttons[3].addEventListener("click", () => {
+    const filtered = scientists.filter(s => s.surname.startsWith("C"));
+    updateScientists(filtered);
+});
 
-    //!Видалити всіх вчених, ім’я яких починається на “А”
+buttons[4].addEventListener("click", () => {
+    const sorted = [...scientists].sort((a, b) => (b.deathYear - b.birthYear) - (a.deathYear - a.birthYear));
+    updateScientists(sorted);
+});
 
-    const deleteA = scientists.filter(scientist => scientist.name.charAt(0) !== "A");
-    console.log(deleteA);
+buttons[5].addEventListener("click", () => {
+    const filtered = scientists.filter(s => !s.name.startsWith("A"));
+    updateScientists(filtered);
+});
 
-    //!Знайти вченого, який народився найпізніше
+buttons[6].addEventListener("click", () => {
+    const latestBorn = scientists.reduce((latest, s) => s.birthYear > latest.birthYear ? s : latest, scientists[0]);
+    updateScientists([latestBorn]);
+});
 
-    const latestBorn = scientists.sort((a, b) => b.born - a.born);
-    console.log(latestBorn[0]);
+buttons[7].addEventListener("click", () => {
+    const longestLived = scientists.reduce((longest, s) => (s.deathYear - s.birthYear) > (longest.deathYear - longest.birthYear) ? s : longest, scientists[0]);
+    const shortestLived = scientists.reduce((shortest, s) => (s.deathYear - s.birthYear) < (shortest.deathYear - shortest.birthYear) ? s : shortest, scientists[0]);
+    updateScientists([longestLived, shortestLived]);
+});
 
-   //! Знайти вченого, який прожив найдовше і вченого, який прожив найменше
+buttons[8].addEventListener("click", () => {
+    const filtered = scientists.filter(s => s.name[0] === s.surname[0]);
+    updateScientists(filtered);
+});
 
-    const longestLife = scientists.sort((a, b) => (a.dead - a.born) - (b.dead - b.born));
-    console.log(longestLife[0]);
-    
-    //!Знайти вчених, в яких співпадають перші літери імені і прізвища
-    const firstLetters = scientists.filter(scientist => scientist.name.charAt(0) === scientist.surname.charAt(0));
-    console.log(firstLetters);
-
-    document.addEventListener("DOMContentLoaded", function() {
-        function formatScientist(scientist) {
-          return `${scientist.name} ${scientist.surname} (Born: ${scientist.born}, Died: ${scientist.dead})`;
-        }
-      
-        function displayResults(results) {
-          const outputEls = document.querySelectorAll('.scientist-text');
-          outputEls.forEach(el => el.textContent = ""); // Очищаем содержимое
-      
-          if (!Array.isArray(results)) {
-            results = [results];
-          }
-          
-          results.forEach((item, index) => {
-            if (index < outputEls.length) {
-              outputEls[index].textContent = (typeof item === "object") ? formatScientist(item) : item;
-            }
-          });
-        }
-      
-        // Проверяем, существуют ли кнопки
-        const buttons = document.querySelectorAll('.button-scienttist-js');
-        if (buttons.length === 0) {
-          console.error("Кнопки .button-scienttist-js не найдены! Проверьте HTML.");
-          return;
-        }
-      
-        buttons.forEach((button, index) => {
-          button.addEventListener("click", () => {
-            let result;
-            try {
-              switch (index) {
-                case 0: result = window.nineteenthCenturyScientists || []; break;
-                case 1: result = window.bornEnstein ? `${window.bornEnstein.name} was born in ${window.bornEnstein.born}` : "Дані не знайдені"; break;
-                case 2: result = window.sortAlphabet || []; break;
-                case 3: result = window.firstLetterC || []; break;
-                case 4: result = window.aliveYears || []; break;
-                case 5: result = window.deleteA || []; break;
-                case 6: result = window.latestBorn || []; break;
-                case 7: {
-                  const sortedByLife = [...(window.scientists || [])].sort((a, b) => (a.dead - a.born) - (b.dead - b.born));
-                  result = sortedByLife.length ? [sortedByLife[0], sortedByLife[sortedByLife.length - 1]] : "Дані не знайдені";
-                  break;
-                }
-                case 8: result = window.firstLetters || []; break;
-                default: result = "Операція не визначена";
-              }
-            } catch (error) {
-              console.error("Ошибка при обработке кнопки:", error);
-              result = "Помилка в коді";
-            }
-      
-            displayResults(result);
-          });
-        });
-      });
+function updateScientists(list) {
+    scientistTexts.forEach((el, index) => {
+        el.textContent = list[index] ? `${list[index].name} ${list[index].surname}` : "";
+    });
+}
