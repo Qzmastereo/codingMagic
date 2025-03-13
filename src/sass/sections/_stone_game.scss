@@ -1,0 +1,62 @@
+.stone__title {
+    font-size: 16px;
+    font-family:  'Montserrat Alternates';
+    font-weight: 400;
+    text-align: center;
+    margin: 36px auto;
+}
+
+.stone__button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.stone__container {
+    display: flex;
+    justify-content: space-between;
+    width: 256px;
+    align-self: center;
+}
+
+.stone__result {
+    position: relative;
+    left: 70%;
+    bottom: 218px;
+    width: 93px;
+    font-size: 12px;
+    font-family: 'Montserrat Alternates';
+    font-weight: 400;
+    line-height: 170%;
+    height: 0;
+}
+
+.stone_ {
+    display: flex;
+    flex-direction: column;
+}
+
+.stone__game-result {
+    font-size: 12px;
+    font-family: 'Montserrat Alternates';
+    font-weight: 400;
+    text-align: center;
+    margin: 36px 0;
+}
+
+.stone__button-mod {
+    width: 182px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    font-family: 'Montserrat Alternates';
+    font-weight: 400;
+    align-self: center;
+    margin-bottom: 36px;
+}
