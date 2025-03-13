@@ -26,12 +26,16 @@
     position: relative;
     left: 70%;
     bottom: 218px;
-    width: 93px;
+    width: 112px;
     font-size: 12px;
     font-family: 'Montserrat Alternates';
     font-weight: 400;
     line-height: 170%;
     height: 0;
+
+    @media screen and (max-width: 1280px) {
+        left: 80%;
+      }
 }
 
 .stone_ {
@@ -47,7 +51,7 @@
     margin: 36px 0;
 }
 
-.stone__button-mod {
+#stone__button-mod {
     width: 182px;
     height: 35px;
     border: none;
@@ -59,4 +63,5 @@
     font-weight: 400;
     align-self: center;
     margin-bottom: 36px;
+    cursor: pointer;
 }
