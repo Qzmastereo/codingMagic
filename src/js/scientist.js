@@ -17,7 +17,7 @@ const scientistTexts = document.querySelectorAll(".scientist-text");
 const buttons = document.querySelectorAll(".button-scienttist-js");
 
 buttons[0].addEventListener("click", () => {
-    const filtered = scientists.filter(s => s.birthYear >= 1800 && s.birthYear < 1900);
+    const filtered = scientists.filter(s => s.birthYear >= 1879 && s.birthYear < 1955);
     updateScientists(filtered);
 });
 

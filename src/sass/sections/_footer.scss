@@ -4,6 +4,11 @@
     padding-bottom: 50px;
     padding-top: 50px;
     background-color: #FFFFFF;
+    gap: 45px;
+}
+
+.image-footer{
+    margin-top: -28px;
 }
 
 .info-footer {
@@ -25,6 +30,7 @@
 .form-footer {
     display: flex;
     gap: 10px;
+    flex-direction: column;
 
     .input-footer {
         flex-grow: 1;
@@ -110,4 +116,125 @@
 
 #gameCanvas{
     width: 680px !important;
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        background-color: #FFFFFF;
+    }
+
+    .image-footer{
+        margin-top: 1px;
+    }
+    
+    .info-footer {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    
+    .modal-footer-text{
+        font-size: 16px;
+    }
+    
+    .link-footer{
+        color: black;
+        font-size: 11px;
+        margin-bottom: 3px;
+    }
+    
+    .form-footer {
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+    
+        .input-footer {
+            flex-grow: 1;
+            border-radius: 30px;
+            padding: 7px;
+            background-color: #D7D7D7;
+        }
+    
+        .btn-footer {
+            padding: 11px 25px;
+            font-size: 11px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+    
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+    
+    
+    .subscribe-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .text-footer {
+        font-size: 7px;
+    }
+    
+    .modal-content{
+        position: relative;
+        width: 463px;
+        height: 245px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .close-modal{
+        position: absolute;
+        top: 6px;
+        right: 22px;
+       
+    }
+    
+    .right-img-footer{
+        position: relative;
+    }
+    
+    .development-footer{
+        position: absolute;
+        top: 28px;
+        right: 41px;
+       
+    }
+    .tic-tac-toe-footer{
+        position: absolute;
+        top: 107px;
+        right: 77px;
+    }
+    
+    .left-img-footer{
+        position: relative;
+    }
+    
+    .puzzle-footer{
+        position: absolute;
+        top: 106px;
+        left: -323px;
+    }
+    
+    .sword-footer{
+        position: absolute;
+        top: 11px;
+        left: -343px;
+    }
+    
+    #gameCanvas{
+        width: 680px !important;
+    }
 }
