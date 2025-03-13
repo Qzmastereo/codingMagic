@@ -24,8 +24,8 @@ function checkResult() {
     }
 }
 
-let humanScore = 1000;
-let PCScore = 1000;
+let humanScore = 0;
+let PCScore = 0;
 
 let stone = document.getElementById('stone');
 let scissors = document.getElementById('scissors');
