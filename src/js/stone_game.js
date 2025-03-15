@@ -78,3 +78,4 @@ PCVar.addEventListener('click', () => {
         Ви - ${humanScore}`
 })
 
+ 
