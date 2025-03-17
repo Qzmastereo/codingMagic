@@ -47,3 +47,32 @@ function toggleTheme() {
 document
   .getElementById("slider_checkbox")
   .addEventListener("change", toggleTheme);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuItems = document.querySelectorAll(".header__menu-item");
+  const sections = document.querySelectorAll("section");
+
+
+  menuItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      const selectedAction = this.getAttribute("data-action");
+
+
+      if (selectedAction === "all") {
+        sections.forEach((section) => {
+          section.classList.remove("hidden");
+        });
+      } else {
+
+        sections.forEach((section) => {
+          
+          if (section.getAttribute("data-action").includes(selectedAction)) {
+            section.classList.remove("hidden");
+          } else {
+            section.classList.add("hidden");
+          }
+        });
+      }
+    });
+  });
+});
