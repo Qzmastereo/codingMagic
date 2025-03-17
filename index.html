@@ -15,7 +15,7 @@
     <title></title>
     <script type="module" crossorigin src="./commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/vendor-6837a909.js">
-    <link rel="stylesheet" href="./assets/index-bc7bd2da.css">
+    <link rel="stylesheet" href="./assets/index-5cb46d4d.css">
   </head>
   <body>
     <header class="header ">
@@ -36,10 +36,10 @@
 
               </div>
               <ul class="header__menu">
-                <li class="header__menu-item header__title header__cursor">Всі секції</li>
-                <li class="header__menu-item header__title header__cursor">Числовий</li>
-                <li class="header__menu-item header__title header__cursor">Ігровий</li>
-                <li class="header__menu-item header__title header__cursor">Ознайомчий</li>
+                <li class="header__menu-item header__title header__cursor" data-action="all">Всі секції</li>
+                <li class="header__menu-item header__title header__cursor" data-action="numerical">Числовий</li>
+                <li class="header__menu-item header__title header__cursor" data-action="game">Ігровий</li>
+                <li class="header__menu-item header__title header__cursor" data-action="informational">Ознайомчий</li>
               </ul>
             </li>
             <li class="header__item">
@@ -108,7 +108,7 @@
     <div class="main-container container">
       <h1 class="Games">Популярні інетрактивні ігри</h1>
       <hr class="line">
-      <section class="leap-year all" data-type="Числовий">
+      <section class="leap-year all" data-action="numerical">
 
     <div class="container leap-year__container">
         <div class="leap-year__info">
@@ -123,10 +123,10 @@
             <p class="leap-year__output" id="output"></p>
         </div>
     </div>
-
+<hr class="line">
 </section>
-      <hr class="line">
-      <section class="guessTheNumber all" data-type="Числовий">
+
+      <section class="guessTheNumber all" data-action="numerical">
     <div class="container">
         <h2 class="guessTheNumber__title">Вгадай число, яке загадав комп’ютер</h2>
         <div class="guessTheNumber__info">
@@ -140,10 +140,10 @@
             </p>
         </div>
     </div>
-
+<hr class="line">
 </section>
-      <hr class="line">
-      <section class="stone">
+    
+      <section class="stone"  data-action="game">
     <h3 class="stone__title">Камінь-ножиці-папір</h3>
     <div class="container stone_">
         <div class="stone__container">
@@ -160,9 +160,10 @@
         Комп'ютер - 0
         Ви - 0
     </p>
+    <hr class="line">
 </section>
-      <hr class="line">
-      <section>
+
+      <section data-action="numerical">
     <div class="container">
         <center>
             <h3 id="title-calc">Калькулятор</h3>
@@ -180,9 +181,10 @@
             <div class="input-calc" id="result"></div>
         </center>
     </div>
+    <hr class="line">
 </section>
-      <hr class="line">
-      <section>
+
+      <section data-action="numerical">
     <div class="container">
         <h3 class="title-tcalc">Калькулятор часу</h3>
         <div class="container-tcalc">
@@ -191,19 +193,25 @@
             <div class="tequal">--:--:--</div>
         </div>
     </div>
+    <hr class="line">
 </section>
-      <hr class="line">
-      <button id="playButton" style="display: none;">Play</button>
+
+      <section class="dinosaur"  data-action="game">
+<button id="playButton" style="display: none;">Play</button>
  <p class="leap-year__main--text">Google динозавр</p>
  <canvas id="game"></canvas>
-      <hr class="line">
-      <section class="football">
+<hr class="line">
+</section>
+
+      <section class="football" data-action="game">
 <h2 class="leap-year__main--text">Футбол</h2>
 <canvas id="gameCanvas" width="720" height="220"></canvas>
 <div id="score">Голи: 0</div>
+<hr class="line">
 </section>
-      <hr class="line">
-      <div class="container-three-numbers">
+
+      <section class="three-num" data-action="numerical">
+<div class="container-three-numbers">
     <p class="leap-year__main--text three-num">Введіть 3 числа</p>
     <div class="input-container">
         <input type="number" class="leap-year__main--text input-field num11" placeholder="Введіть число" oninput="findMax()">
@@ -212,10 +220,12 @@
     </div>
     <div class="leap-year__main--text result-one">Найбільше число, яке ви ввели - (число)</div>
 </div>
-      <hr class="line">
+<hr class="line">
+</section>
+
       
       <hr class="line">
-      <section class="container scientist">
+      <section class="container scientist" data-action="informational">
 
 <ul class="scientist-list">
     <li class="scientist-item">
@@ -294,7 +304,7 @@
         <li class="btn-scienttist-item"><button class="button-scienttist button-scienttist-js">Знайти вчених, в яких співпадають перші літери імені і прізвища</button></li>
     </ul>
 </section>
-      <hr class="line">
+
       </div>
     </main>
    
