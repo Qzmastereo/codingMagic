@@ -15,7 +15,7 @@
     <title></title>
     <script type="module" crossorigin src="./commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/vendor-6837a909.js">
-    <link rel="stylesheet" href="./assets/index-5cb46d4d.css">
+    <link rel="stylesheet" href="./assets/index-864c911b.css">
   </head>
   <body>
     <header class="header ">
@@ -223,10 +223,77 @@
 <hr class="line">
 </section>
 
-      
-      <hr class="line">
-      <section class="container scientist" data-action="informational">
+      <section class="ourTeam">
+    <h3 class="our-team-title">Наша команда</h3>
+    
+     <div class=" our-team-box container">
+        <button class="back-btn"> 
+            <img src="../img/<.svg" alt="">
+         </button>
+    <div class="first-slide">
+        <div class="our-team-photo">
+            <img src="../public/img/volodymyr.jpg" alt="photo" class="volodymyr-photo" width="150px" height="150px">
+        </div>
 
+        <div class="name-student">
+          <h3 class="our-team-name">Володимир Удянський - тім лід</h3>
+         </div>
+
+        <div class="our-team-info">
+         <p>Зробив: Хедер, гру перевір в який рік народився, гру вгадай число, темну тему</p>
+        </div>
+    </div>
+    <div class="second-slide">
+        <div class="our-team-photo">
+            <img src="../public/img/veronika.jpg" alt="photo" class="veronika-photo" width="150px" height="150px">
+        </div>
+
+        <div class="name-student">
+          <h3 class="our-team-name">Мартинчук Вероніка - скрам
+            майстер</h3>
+         </div>
+
+        <div class="our-team-info">
+         <p>Скрам-майстер, зробила: гру Google Dino, гру Футбол, гру «3 числа»</p>
+        </div>
+    </div>
+    <div class="third-slide">
+        <div class="our-team-photo">
+            <img src="../public/img/leonid.jpg" alt="photo" class="leonid-photo" width="150px" height="150px">
+        </div>
+
+        <div class="name-student">
+          <h3 class="our-team-name">Леонід Астаф’єф</h3>
+         </div>
+
+        <div class="our-team-info">
+         <p>Зробив:
+            Гру камінь-ножиці-папір,
+            Калькулятор,
+            Калькулятор часу.</p>
+        </div>
+    </div>
+    <div class="fourth-slide">
+        <div class="our-team-photo">
+            <img src="../public/img/rostyslav_photo.jpeg" alt="photo" class="rostyslav-photo" width="150px" height="150px">
+        </div>
+
+        <div class="name-student">
+          <h3 class="our-team-name"> Ростислав Голота</h3>
+         </div>
+
+        <div class="our-team-info">
+         <p>Зробив: футер, обери вченого/их та слайд шоу наша команда</p>
+        </div>
+    </div>
+    <button class="next-slide"><img src="../img/>.svg" alt=""></button>
+</div>
+
+    
+    
+</section>
+      <hr class="line">
+      
 <ul class="scientist-list">
     <li class="scientist-item">
         <div class="scientist-inner">
@@ -292,14 +359,14 @@
 </ul>
 
     <ul class="btn-scienttist-list">
-        <li class="btn-scienttist-item"><button class="button-scienttist button-scienttist-js">Які вчені народилися в 19 ст.</button></li>
+        <li class="btn-scienttist-item"><button class="button-scienttist button-scienttist-js" id="born-in-19">Які вчені народилися в 19 ст.</button></li>
         <li class="btn-scienttist-item"><button class="button-scienttist button-scienttist-js">Знайти рік народження Albert Einshtein</button></li>
         <li class="btn-scienttist-item"><button class="button-scienttist button-scienttist-js">Відсортувати вчених за алфавітом</button></li>
         <li class="btn-scienttist-item"><button class="button-scienttist button-scienttist-js">Знайти вчених, прізвища яких починаються на на літеру “С” </button></li>
         <li class="btn-scienttist-item"><button class="button-scienttist button-scienttist-js">Відсортувати вчених за кількістю прожитих років</button></li>
         <li class="btn-scienttist-item"><button class="button-scienttist button-scienttist-js">Видалити всіх вчених, ім’я яких починається на “А”</button></li>
         <li class="btn-scienttist-item"><button class="button-scienttist button-scienttist-js">Знайти вченого, який народився найпізніше</button></li>
-        <li class="btn-scienttist-item"><button class="button-scienttist button-scienttist-js">Знайти вченого, який прожив найдовше і вченого, 
+        <li class="btn-scienttist-item"><button class="button-scienttist button-scienttist-js" id="find-scientist">Знайти вченого, який прожив найдовше і вченого, 
             який прожив найменше</button></li>
         <li class="btn-scienttist-item"><button class="button-scienttist button-scienttist-js">Знайти вчених, в яких співпадають перші літери імені і прізвища</button></li>
     </ul>
