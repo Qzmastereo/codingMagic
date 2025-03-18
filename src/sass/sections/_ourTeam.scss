@@ -29,9 +29,18 @@
 .name-student{
     text-align: center;
     margin-bottom: 12px;
+    max-width: 530px; ;
 }
 
 .our-team-photo img{
     border-radius: 20px;
     object-fit: cover;
+}
+
+.our-team-info{
+    text-align: center;
+}
+
+.cont-ourteam {
+    width: 550px;
 }
