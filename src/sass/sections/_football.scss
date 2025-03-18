@@ -23,9 +23,28 @@
     margin-bottom: 36px;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 760px) {
 
     #gameCanvas {
-width: 580px !important;    }
+width:480px !important;    }
+
+}
+
+@media screen and (max-width: 560px) {
+
+    #gameCanvas {
+width:380px !important;
+border-radius: 25px ;
+}
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    #gameCanvas {
+width:280px !important;
+border-radius: 20px ;
+}
 
 }
