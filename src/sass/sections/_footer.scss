@@ -121,6 +121,21 @@
     width: 680px;
 }
 
+@media screen and (min-width: 768px){
+    .image-footer{
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .info-footer{
+        display: flex;
+        align-items: center;
+    }
+    .link-footer{
+        font-size: 13px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .footer {
         display: flex;
