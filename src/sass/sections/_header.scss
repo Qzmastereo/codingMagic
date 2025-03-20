@@ -282,3 +282,9 @@ input:checked + .slider:before {
     gap: 8px;
   }
 }
+.header__menu{
+  background-color: #FFFFFF;
+}
+body.dark-theme .header__menu {
+  background-color: rgb(92, 92, 92);
+}
