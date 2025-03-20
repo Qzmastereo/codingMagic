@@ -7,36 +7,57 @@
 }
 
 .stone__button {
+    position: relative;
     width: 60px;
     height: 60px;
     border: none;
     border-radius: 20px;
     background-color: black;
     cursor: pointer;
+    transition: transform 0.5s ease-out;
+}
+
+.stone__button:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-out;
+}
+
+.stone__button:focus {
+    transform: scale();
 }
 
 .stone__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 256px;
     align-self: center;
+    height: 70px;
 }
 
 .stone__result {
     position: relative;
     left: 70%;
-    bottom: 218px;
+    height: 0;
+    bottom: 67px;
     width: 112px;
     font-size: 12px;
     font-family: 'Montserrat Alternates';
     font-weight: 400;
     line-height: 170%;
-    height: 0;
-
-    @media screen and (max-width: 1280px) {
-        left: 80%;
-      }
-}
+    left: 70%;
+    
+        @media screen and (max-width: 1280px) {
+            left: 80%;
+          }
+    
+        @media screen and (max-width: 767px) {
+            height: 63px;
+            position: static;
+            margin-top: 36px;
+            align-self: center;
+            text-align: center;
+        }
+    }
 
 .stone_ {
     display: flex;
@@ -64,4 +85,16 @@
     align-self: center;
     margin-bottom: 36px;
     cursor: pointer;
+}
+
+.stone__button-mod-not-avalible {
+    cursor: not-allowed !important;
+}
+
+.stone__button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
 }
