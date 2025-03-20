@@ -13,7 +13,7 @@ function checkResult() {
         (HumanAnswer === 'scissors' && PCAnswer === 'paper') ||
         (HumanAnswer === 'paper' && PCAnswer === 'stone')
     ) {
-        stoneResult.style.color = 'green';
+        stoneResult.style.color = 'lightgreen';
         stoneResult.textContent = 'Ви перемогли!';
         humanScore++
 
