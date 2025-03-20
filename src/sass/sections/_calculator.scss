@@ -11,6 +11,14 @@
     align-items: center;
     margin: 0 auto 36px auto;
     width: 635px;
+    
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 300px;
+    }
 }
 
 .input-calc {
@@ -39,6 +47,12 @@
     height: 25px;
     width: 25px;
     cursor: pointer;
+    transition: transform 1 ease;
+}
+
+.button-calc:hover {
+    transform: scale(1.5);
+    transition: transform 1 ease;
 }
 
 .ul-calc {
@@ -64,3 +78,4 @@
     height: 25px;
     width: 25px;
 }
+

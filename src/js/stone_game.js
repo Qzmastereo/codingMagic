@@ -27,6 +27,8 @@ function checkResult() {
 let humanScore = 0;
 let PCScore = 0;
 
+
+
 let stone = document.getElementById('stone');
 let scissors = document.getElementById('scissors');
 let paper = document.getElementById('paper');
@@ -73,9 +75,12 @@ PCVar.addEventListener('click', () => {
     checkResult()
     PCVar.style.backgroundColor = 'rgb(70, 70, 70)';
     PCVar.disabled = true;
+    PCVar.classList.add('.stone__button-mod-not-avalible');
     stoneScoreList.textContent = `Рахунок:
         Комп'ютер - ${PCScore}
         Ви - ${humanScore}`
-})
+});
 
- 
+PCVar.addEventListener('click', () => {
+    stoneScoreList.style.width = '100px'
+})
