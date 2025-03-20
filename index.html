@@ -15,7 +15,7 @@
     <title></title>
     <script type="module" crossorigin src="./commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/vendor-6837a909.js">
-    <link rel="stylesheet" href="./assets/index-d31c1718.css">
+    <link rel="stylesheet" href="./assets/index-87c871d4.css">
   </head>
   <body>
     <header class="header ">
@@ -147,19 +147,24 @@
     <h3 class="stone__title">Камінь-ножиці-папір</h3>
     <div class="container stone_">
         <div class="stone__container">
-            <button class="stone__button" id="stone"><img src="./assets/stone 1-687492a4.svg" alt="Камінь"></button>
-            <button class="stone__button" id="scissors"><img src="./assets/scissors 1-296b083f.svg" alt="Ножиці"></button>
-            <button class="stone__button" id="paper"><img src="./assets/paper 1-ddae1753.svg" alt="Папір"></button>
+            <div class="stone__button-container">
+            <button class="stone__button" id="stone"><img class="stone__icon" src="./assets/stone 1-687492a4.svg" alt="Камінь"></button>
+        </div>
+        <div class="stone__button-container">
+            <button class="stone__button" id="scissors"><img class="stone__icon" src="./assets/scissors 1-296b083f.svg" alt="Ножиці"></button>
+        </div>
+        <div class="stone__button-container">
+            <button class="stone__button" id="paper"><img class="stone__icon" src="./assets/paper 1-ddae1753.svg" alt="Папір"></button>
+        </div>
             
         </div>
-        
+        <p id="stone__mobile-result" class="stone__result">Рахунок:
+            Комп'ютер - 0
+            Ви - 0
+        </p>
         <h4 class="stone__game-result">Розпочніть гру!</h4>
         <button type="button" id="stone__button-mod">Варіант комп’ютера</button>
     </div>
-    <p class="stone__result">Рахунок:
-        Комп'ютер - 0
-        Ви - 0
-    </p>
     <hr class="line">
 </section>
 
@@ -189,7 +194,7 @@
         <h3 class="title-tcalc">Калькулятор часу</h3>
         <div class="container-tcalc">
             <input class="time-input" type="number" placeholder="Введіть число">
-            <p class="dots">.........................</p>
+            <p class="dots">••••••••••••••••••••••••••••</p>
             <div class="tequal">--:--:--</div>
         </div>
     </div>
