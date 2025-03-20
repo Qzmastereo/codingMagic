@@ -5,10 +5,13 @@
     padding-top: 50px;
     background-color: #FFFFFF;
     gap: 45px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .image-footer{
-    margin-top: -28px;
+    margin-top: 0px;
 }
 
 .info-footer {
@@ -125,6 +128,8 @@
         padding-bottom: 50px;
         padding-top: 50px;
         background-color: #FFFFFF;
+        flex-direction: row;
+        margin-bottom: 20px;
     }
 
     .image-footer{

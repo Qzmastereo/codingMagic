@@ -1,3 +1,8 @@
+.scientist{
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .choose-scientist{
     text-align: center;
     padding: 30px 0;
@@ -55,6 +60,10 @@ border: none;
 .btn-scienttist-item{
     width: 35%;
     height: 80px;
+}
+.button-scienttist:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .scientist{
@@ -115,7 +124,7 @@ border: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 12px;
+        gap: 20px;
     }
     
     .btn-scienttist-item{
@@ -125,6 +134,7 @@ border: none;
 
     #born-in-19{
         padding: 18px 55px;;
+        
     }
 
     #find-scientist{
